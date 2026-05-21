@@ -1,9 +1,10 @@
-// Build per-tier JSONs → dist/{input,screen,output,index}.css.
+// Build per-tier JSONs → dist/{input,screen,output,comps,index}.css.
 // Reads Token Studio multi-file layout directly.
 //
-// All values resolve via var() chains: Output references Screen/Input,
-// Screen references Input. Flip [data-screen] on any element and the
-// cascade re-resolves every downstream var without JS or rebuilds.
+// All values resolve via var() chains: Comps reference Output/Screen/Input,
+// Output references Screen/Input, Screen references Input. Flip [data-screen]
+// on any element and the cascade re-resolves every downstream var without
+// JS or rebuilds.
 
 import StyleDictionary from "style-dictionary";
 import { register } from "@tokens-studio/sd-transforms";
@@ -26,6 +27,7 @@ const SRC = {
   input: `${TOKENS_DIR}/🔵 Input.json`,
   screenMobile: `${TOKENS_DIR}/🟠 Screen/mobile.json`,
   screenDesktop: `${TOKENS_DIR}/🟠 Screen/desktop.json`,
+  output: `${TOKENS_DIR}/🟢 Output.json`,
 };
 
 for (const [name, path] of Object.entries(SRC)) {
@@ -34,30 +36,21 @@ for (const [name, path] of Object.entries(SRC)) {
   }
 }
 
-// Output tier sources — semantic theme tokens (🟢 Output) plus component
-// tokens (🟣 Comps/*). Order matters for cross-set refs (e.g.
-// comp.post.gap → comp.stack.sm), so we read it from Token Studio's
-// $metadata.json instead of globbing — TS maintains tokenSetOrder as you
-// add or reorder sets in the UI.
-//
-// Matchers cover both flat single-set tiers and folder-based multi-set
-// tiers. Add new top-level groups here to include them in output.css.
-const OUTPUT_TIER_MATCHERS = [
-  (s) => s === "🟢 Output",
-  (s) => s.startsWith("🟣 Comps/"),
-];
-
+// Comps tier sources — component tokens (🟣 Comps/*). Order matters for
+// cross-set refs (e.g. comp.post.gap → comp.stack.sm), so we read it from
+// Token Studio's $metadata.json instead of globbing — TS maintains
+// tokenSetOrder as you add or reorder sets in the UI.
 const metadata = JSON.parse(
   readFileSync(resolve(ROOT, TOKENS_DIR, "$metadata.json"), "utf8"),
 );
-const outputSets = metadata.tokenSetOrder
-  .filter((s) => OUTPUT_TIER_MATCHERS.some((m) => m(s)))
+const compsSets = metadata.tokenSetOrder
+  .filter((s) => s.startsWith("🟣 Comps/"))
   .map((s) => `${TOKENS_DIR}/${s}.json`);
 
-if (outputSets.length === 0) {
-  throw new Error("No output-tier sets found in $metadata.json tokenSetOrder");
+if (compsSets.length === 0) {
+  throw new Error("No Comps sets found in $metadata.json tokenSetOrder");
 }
-for (const path of outputSets) {
+for (const path of compsSets) {
   if (!existsSync(resolve(ROOT, path))) {
     throw new Error(`Missing source: ${path}`);
   }
@@ -104,8 +97,6 @@ StyleDictionary.registerFormat({
   format: ({ dictionary, options }) => {
     const { mode, mediaQuery } = options;
     const toVar = (refPath) => `var(--${refPath.replace(/\./g, "-")})`;
-    // sd-transforms preprocessor preserves DTCG $value naming, so read
-    // from $value (not the bare value) for both resolved and original.
     const renderValue = (t) => {
       const orig = t.original.$value ?? t.original.value;
       if (typeof orig === "string" && /\{[^}]+\}/.test(orig)) {
@@ -145,8 +136,6 @@ async function buildTier({ name, include = [], source, format, options = {} }) {
     platforms: {
       css: {
         transformGroup: "tokens-studio",
-        // Append our px-number transform plus name/kebab. The tokens-studio
-        // group runs first, then these.
         transforms: ["ts/size/px-number", "name/kebab"],
         buildPath: `${OUT_DIR}/`,
         files: [
@@ -197,14 +186,25 @@ await buildTier({
   options: { mode: "desktop", mediaQuery: "(min-width: 768px)" },
 });
 
-// Output — semantic tokens → :root, referencing Input + Screen via var().
-// Mobile is included as the "default" Screen set so refs like {number.sm}
-// resolve at build time; runtime swapping is handled by screen.css.
-// outputReferences keeps refs as var(--name) instead of resolving to literals.
+// Output — theme tokens → :root, referencing Input via var().
+// Mobile is included as the "default" Screen set so any refs like
+// {number.sm} resolve at build time; runtime swapping is handled by
+// screen.css. outputReferences keeps refs as var(--name).
 await buildTier({
   name: "output",
   include: [SRC.input, SRC.screenMobile],
-  source: outputSets,
+  source: [SRC.output],
+  format: "css/variables",
+  options: { outputReferences: true },
+});
+
+// Comps — component tokens → :root, referencing Output/Screen/Input.
+// All upstream tiers included for ref resolution; only Comps tokens
+// emitted thanks to the isSource filter.
+await buildTier({
+  name: "comps",
+  include: [SRC.input, SRC.screenMobile, SRC.output],
+  source: compsSets,
   format: "css/variables",
   options: { outputReferences: true },
 });
@@ -220,6 +220,8 @@ rmSync(join(OUT_DIR, "screen-mobile.css"));
 rmSync(join(OUT_DIR, "screen-desktop.css"));
 
 // --- Write index.css entrypoint ---------------------------------------
+// Import order matches dependency order: Input → Screen → Output → Comps.
+// Each tier's CSS only references vars from tiers above it.
 writeFileSync(
   join(OUT_DIR, "index.css"),
   [
@@ -227,8 +229,9 @@ writeFileSync(
     `@import "./input.css";`,
     `@import "./screen.css";`,
     `@import "./output.css";`,
+    `@import "./comps.css";`,
     ``,
   ].join("\n"),
 );
 
-console.log("✓ Built dist/{input,screen,output,index}.css");
+console.log("✓ Built dist/{input,screen,output,comps,index}.css");
