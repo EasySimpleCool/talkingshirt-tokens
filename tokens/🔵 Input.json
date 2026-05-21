@@ -2,35 +2,35 @@
   "color": {
     "black": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": false
+        "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
       "$value": "#424242"
     },
     "white": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": false
+        "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
       "$value": "#ffffff"
     },
     "grey": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": false
+        "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
       "$value": "#808080"
     },
     "grey-2": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": false
+        "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
       "$value": "#a8a8a8"
     },
     "grey-3": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": false
+        "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
       "$value": "#e0e0e0"
@@ -40,7 +40,7 @@
         "com.figma.scopes": [
           "ALL_SCOPES"
         ],
-        "com.figma.hiddenFromPublishing": false
+        "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
       "$value": "#22863a"
@@ -50,7 +50,7 @@
         "com.figma.scopes": [
           "ALL_SCOPES"
         ],
-        "com.figma.hiddenFromPublishing": false
+        "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
       "$value": "#f0fff4"
@@ -60,7 +60,7 @@
         "com.figma.scopes": [
           "ALL_SCOPES"
         ],
-        "com.figma.hiddenFromPublishing": false
+        "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
       "$value": "#c0392b"
@@ -70,7 +70,7 @@
         "com.figma.scopes": [
           "ALL_SCOPES"
         ],
-        "com.figma.hiddenFromPublishing": false
+        "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
       "$value": "#fff5f5"
@@ -80,7 +80,7 @@
         "com.figma.scopes": [
           "ALL_SCOPES"
         ],
-        "com.figma.hiddenFromPublishing": false
+        "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
       "$value": "#d69e2e"
@@ -90,7 +90,7 @@
         "com.figma.scopes": [
           "ALL_SCOPES"
         ],
-        "com.figma.hiddenFromPublishing": false
+        "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
       "$value": "#fffbeb"
@@ -109,7 +109,7 @@
         "com.figma.scopes": [
           "ALL_SCOPES"
         ],
-        "com.figma.hiddenFromPublishing": false
+        "com.figma.hiddenFromPublishing": true
       },
       "$type": "number",
       "$value": "1"
