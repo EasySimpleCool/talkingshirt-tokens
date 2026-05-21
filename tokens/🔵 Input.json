@@ -2,44 +2,47 @@
   "color": {
     "black": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true
+        "com.figma.hiddenFromPublishing": true,
+        "com.figma.scopes": []
       },
       "$type": "color",
       "$value": "#424242"
     },
     "white": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true
+        "com.figma.hiddenFromPublishing": true,
+        "com.figma.scopes": []
       },
       "$type": "color",
       "$value": "#ffffff"
     },
     "grey": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true
+        "com.figma.hiddenFromPublishing": true,
+        "com.figma.scopes": []
       },
       "$type": "color",
       "$value": "#808080"
     },
     "grey-2": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true
+        "com.figma.hiddenFromPublishing": true,
+        "com.figma.scopes": []
       },
       "$type": "color",
       "$value": "#a8a8a8"
     },
     "grey-3": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true
+        "com.figma.hiddenFromPublishing": true,
+        "com.figma.scopes": []
       },
       "$type": "color",
       "$value": "#e0e0e0"
     },
     "green": {
       "$extensions": {
-        "com.figma.scopes": [
-          "ALL_SCOPES"
-        ],
+        "com.figma.scopes": [],
         "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
@@ -47,9 +50,7 @@
     },
     "green-2": {
       "$extensions": {
-        "com.figma.scopes": [
-          "ALL_SCOPES"
-        ],
+        "com.figma.scopes": [],
         "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
@@ -57,9 +58,7 @@
     },
     "red": {
       "$extensions": {
-        "com.figma.scopes": [
-          "ALL_SCOPES"
-        ],
+        "com.figma.scopes": [],
         "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
@@ -67,9 +66,7 @@
     },
     "red-2": {
       "$extensions": {
-        "com.figma.scopes": [
-          "ALL_SCOPES"
-        ],
+        "com.figma.scopes": [],
         "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
@@ -77,9 +74,7 @@
     },
     "yellow": {
       "$extensions": {
-        "com.figma.scopes": [
-          "ALL_SCOPES"
-        ],
+        "com.figma.scopes": [],
         "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
@@ -87,9 +82,7 @@
     },
     "yellow-2": {
       "$extensions": {
-        "com.figma.scopes": [
-          "ALL_SCOPES"
-        ],
+        "com.figma.scopes": [],
         "com.figma.hiddenFromPublishing": true
       },
       "$type": "color",
@@ -99,16 +92,15 @@
   "number": {
     "0": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true
+        "com.figma.hiddenFromPublishing": true,
+        "com.figma.scopes": []
       },
       "$type": "number",
       "$value": "0"
     },
     "1": {
       "$extensions": {
-        "com.figma.scopes": [
-          "ALL_SCOPES"
-        ],
+        "com.figma.scopes": [],
         "com.figma.hiddenFromPublishing": true
       },
       "$type": "number",
@@ -116,49 +108,56 @@
     },
     "4": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true
+        "com.figma.hiddenFromPublishing": true,
+        "com.figma.scopes": []
       },
       "$type": "number",
       "$value": "4"
     },
     "8": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true
+        "com.figma.hiddenFromPublishing": true,
+        "com.figma.scopes": []
       },
       "$type": "number",
       "$value": "8"
     },
     "12": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true
+        "com.figma.hiddenFromPublishing": true,
+        "com.figma.scopes": []
       },
       "$type": "number",
       "$value": "12"
     },
     "16": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true
+        "com.figma.hiddenFromPublishing": true,
+        "com.figma.scopes": []
       },
       "$type": "number",
       "$value": "16"
     },
     "24": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true
+        "com.figma.hiddenFromPublishing": true,
+        "com.figma.scopes": []
       },
       "$type": "number",
       "$value": "24"
     },
     "40": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true
+        "com.figma.hiddenFromPublishing": true,
+        "com.figma.scopes": []
       },
       "$type": "number",
       "$value": "40"
     },
     "80": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true
+        "com.figma.hiddenFromPublishing": true,
+        "com.figma.scopes": []
       },
       "$type": "number",
       "$value": "80"
