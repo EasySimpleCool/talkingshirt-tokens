@@ -1,0 +1,48 @@
+name: Build tokens
+
+on:
+  push:
+    branches: [main]
+    # Only rebuild when build inputs change. Excludes dist/ to prevent
+    # the bot's own push (which touches only dist/) from re-triggering.
+    paths:
+      - "tokens/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/build.yml"
+
+permissions:
+  contents: write
+
+# Serialize on main so two quick TS pushes don't race to commit dist/.
+concurrency:
+  group: build-tokens-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Commit dist/ if changed
+        run: |
+          if git diff --quiet -- dist/; then
+            echo "No dist/ changes — skipping commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/
+          git commit -m "chore: rebuild dist/"
+          git push
