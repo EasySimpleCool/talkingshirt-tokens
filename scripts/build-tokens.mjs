@@ -14,13 +14,12 @@ const ROOT = process.cwd();
 const TOKENS_DIR = "tokens";
 const OUT_DIR = resolve(ROOT, "dist");
 
-// Source paths — Token Studio's multi-file layout under tokens/. TS
-// conventions: single-set tiers are flat .json files, multi-set tiers
-// are folders containing files prefixed with "↳ ".
+// Source paths — Token Studio's multi-file layout under tokens/. Single-
+// set tiers are flat .json files; multi-set tiers are folders.
 const SRC = {
   input: `${TOKENS_DIR}/🔵 Input.json`,
-  screenMobile: `${TOKENS_DIR}/🟠 Screen/↳ mobile.json`,
-  screenDesktop: `${TOKENS_DIR}/🟠 Screen/↳ desktop.json`,
+  screenMobile: `${TOKENS_DIR}/🟠 Screen/mobile.json`,
+  screenDesktop: `${TOKENS_DIR}/🟠 Screen/desktop.json`,
 };
 
 for (const [name, path] of Object.entries(SRC)) {
