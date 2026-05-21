@@ -11,13 +11,16 @@ import { mkdirSync, readFileSync, writeFileSync, rmSync, existsSync } from "node
 import { resolve, join } from "node:path";
 
 const ROOT = process.cwd();
+const TOKENS_DIR = "tokens";
 const OUT_DIR = resolve(ROOT, "dist");
 
-// Source paths — Token Studio's multi-file layout, emoji-prefixed folders.
+// Source paths — Token Studio's multi-file layout under tokens/, emoji-
+// prefixed folders. Kept under a subfolder so TS's sync only sees token
+// files, not package.json/dist/etc.
 const SRC = {
-  input: "🔵 Input/default.json",
-  screenMobile: "🟠 Screen/mobile.json",
-  screenDesktop: "🟠 Screen/desktop.json",
+  input: `${TOKENS_DIR}/🔵 Input/default.json`,
+  screenMobile: `${TOKENS_DIR}/🟠 Screen/mobile.json`,
+  screenDesktop: `${TOKENS_DIR}/🟠 Screen/desktop.json`,
 };
 
 for (const [name, path] of Object.entries(SRC)) {
@@ -26,14 +29,17 @@ for (const [name, path] of Object.entries(SRC)) {
   }
 }
 
-// Output tier is split per-component in 🟢 Output/. Order matters for refs
-// (e.g. comp.post.gap → comp.stack.sm), so we read it from Token Studio's
-// $metadata.json instead of globbing — TS maintains tokenSetOrder as you
-// add or reorder sets in the UI.
-const metadata = JSON.parse(readFileSync(resolve(ROOT, "$metadata.json"), "utf8"));
+// Output tier is split per-component in tokens/🟢 Output/. Order matters
+// for refs (e.g. comp.post.gap → comp.stack.sm), so we read it from Token
+// Studio's $metadata.json instead of globbing — TS maintains tokenSetOrder
+// as you add or reorder sets in the UI. Set names are stored without the
+// tokens/ prefix (that's the TS base path), so we prepend it for the fs.
+const metadata = JSON.parse(
+  readFileSync(resolve(ROOT, TOKENS_DIR, "$metadata.json"), "utf8"),
+);
 const outputSets = metadata.tokenSetOrder
   .filter((s) => s.startsWith("🟢 Output/"))
-  .map((s) => `${s}.json`);
+  .map((s) => `${TOKENS_DIR}/${s}.json`);
 
 if (outputSets.length === 0) {
   throw new Error("No 🟢 Output/* sets found in $metadata.json tokenSetOrder");
