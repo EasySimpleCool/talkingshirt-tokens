@@ -161,6 +161,14 @@
       },
       "$type": "number",
       "$value": "80"
+    },
+    "160": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.scopes": []
+      },
+      "$type": "number",
+      "$value": "160"
     }
   }
 }
