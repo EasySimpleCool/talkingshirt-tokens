@@ -2,7 +2,7 @@
   "common": {
     "main-body": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true,
+        "com.figma.hiddenFromPublishing": false,
         "com.figma.scopes": []
       },
       "$type": "number",
@@ -12,7 +12,7 @@
   "number": {
     "sm": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true,
+        "com.figma.hiddenFromPublishing": false,
         "com.figma.scopes": []
       },
       "$type": "number",
@@ -20,7 +20,7 @@
     },
     "md": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true,
+        "com.figma.hiddenFromPublishing": false,
         "com.figma.scopes": []
       },
       "$type": "number",
@@ -28,7 +28,7 @@
     },
     "lg": {
       "$extensions": {
-        "com.figma.hiddenFromPublishing": true,
+        "com.figma.hiddenFromPublishing": false,
         "com.figma.scopes": []
       },
       "$type": "number",
