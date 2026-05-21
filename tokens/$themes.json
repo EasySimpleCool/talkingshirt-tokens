@@ -31,7 +31,8 @@
     "selectedTokenSets": {
       "🟢 Output": "enabled",
       "🔵 Input": "source",
-      "🟠 Screen/mobile": "source"
+      "🟠 Screen/mobile": "source",
+      "🟠 Screen/desktop": "source"
     },
     "group": "🟢 Output"
   },
@@ -45,7 +46,9 @@
       "🟣 Comps/stack": "enabled",
       "🟣 Comps/post": "enabled",
       "🔵 Input": "source",
-      "🟠 Screen/mobile": "source"
+      "🟠 Screen/mobile": "source",
+      "🟠 Screen/desktop": "source",
+      "🟢 Output": "source"
     },
     "group": "🟣 Comps"
   }
