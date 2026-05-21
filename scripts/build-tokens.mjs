@@ -29,20 +29,27 @@ for (const [name, path] of Object.entries(SRC)) {
   }
 }
 
-// Output tier is split per-component in tokens/🟢 Output/. Order matters
-// for refs (e.g. comp.post.gap → comp.stack.sm), so we read it from Token
-// Studio's $metadata.json instead of globbing — TS maintains tokenSetOrder
-// as you add or reorder sets in the UI. Set names are stored without the
-// tokens/ prefix (that's the TS base path), so we prepend it for the fs.
+// Output tier sources — semantic theme tokens in 🟢 Output/, component
+// tokens in 🟣 Comps/. Order matters for cross-set refs (e.g.
+// comp.post.gap → comp.stack.sm), so we read it from Token Studio's
+// $metadata.json instead of globbing — TS maintains tokenSetOrder as you
+// add or reorder sets in the UI. Set names are stored without the tokens/
+// prefix (that's the TS base path), so we prepend it for the fs.
+//
+// Add new top-level folders here to include them in output.css:
+const OUTPUT_TIER_PREFIXES = ["🟢 Output/", "🟣 Comps/"];
+
 const metadata = JSON.parse(
   readFileSync(resolve(ROOT, TOKENS_DIR, "$metadata.json"), "utf8"),
 );
 const outputSets = metadata.tokenSetOrder
-  .filter((s) => s.startsWith("🟢 Output/"))
+  .filter((s) => OUTPUT_TIER_PREFIXES.some((p) => s.startsWith(p)))
   .map((s) => `${TOKENS_DIR}/${s}.json`);
 
 if (outputSets.length === 0) {
-  throw new Error("No 🟢 Output/* sets found in $metadata.json tokenSetOrder");
+  throw new Error(
+    `No sets matching [${OUTPUT_TIER_PREFIXES.join(", ")}] found in $metadata.json tokenSetOrder`,
+  );
 }
 for (const path of outputSets) {
   if (!existsSync(resolve(ROOT, path))) {

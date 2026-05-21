@@ -4,10 +4,10 @@
     "🟠 Screen/mobile",
     "🟠 Screen/desktop",
     "🟢 Output/theme",
-    "🟢 Output/button",
-    "🟢 Output/container",
-    "🟢 Output/section",
-    "🟢 Output/stack",
-    "🟢 Output/post"
+    "🟣 Comps/button",
+    "🟣 Comps/container",
+    "🟣 Comps/section",
+    "🟣 Comps/stack",
+    "🟣 Comps/post"
   ]
 }
