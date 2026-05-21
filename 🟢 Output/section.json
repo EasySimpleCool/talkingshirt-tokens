@@ -1,0 +1,60 @@
+{
+  "comp": {
+    "section": {
+      "lg": {
+        "v-pad": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "number",
+          "$value": "{number.40}"
+        },
+        "h-pad": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "number",
+          "$value": "{number.24}"
+        }
+      },
+      "md": {
+        "h-pad": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "number",
+          "$value": "{number.24}"
+        },
+        "v-pad": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "number",
+          "$value": "{number.24}"
+        },
+        "height": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "number",
+          "$value": "{number.80}"
+        }
+      }
+    }
+  }
+}

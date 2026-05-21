@@ -1,0 +1,16 @@
+{
+  "comp": {
+    "post": {
+      "gap": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "number",
+        "$value": "{comp.stack.sm}"
+      }
+    }
+  }
+}

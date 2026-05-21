@@ -1,0 +1,57 @@
+{
+  "theme": {
+    "fg": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{color.black}"
+    },
+    "bg": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_FILLS"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{color.white}"
+    },
+    "faint": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{color.grey-2}"
+    },
+    "fg-alt": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{color.grey}"
+    },
+    "faint-alt": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{color.grey-3}"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+/* Screen tier: mobile */
+@media (max-width: 767px) {
+  :root {
+    --number-sm: var(--number-16);
+    --number-md: var(--number-24);
+    --number-lg: var(--number-40);
+    --common-main-body: 800;
+  }
+}
+[data-screen="mobile"] {
+  --number-sm: var(--number-16);
+  --number-md: var(--number-24);
+  --number-lg: var(--number-40);
+  --common-main-body: 800;
+}
+
+/* Screen tier: desktop */
+@media (min-width: 768px) {
+  :root {
+    --number-sm: var(--number-24);
+    --number-md: var(--number-40);
+    --number-lg: var(--number-80);
+    --common-main-body: 800;
+  }
+}
+[data-screen="desktop"] {
+  --number-sm: var(--number-24);
+  --number-md: var(--number-40);
+  --number-lg: var(--number-80);
+  --common-main-body: 800;
+}

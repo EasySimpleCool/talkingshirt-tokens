@@ -1,0 +1,16 @@
+{
+  "comp": {
+    "container": {
+      "max-w": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "number",
+        "$value": "{common.main-body}"
+      }
+    }
+  }
+}

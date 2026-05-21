@@ -3,6 +3,11 @@
     "🔵 Input/default",
     "🟠 Screen/mobile",
     "🟠 Screen/desktop",
-    "🟢 Output/default"
+    "🟢 Output/theme",
+    "🟢 Output/button",
+    "🟢 Output/container",
+    "🟢 Output/section",
+    "🟢 Output/stack",
+    "🟢 Output/post"
   ]
 }
