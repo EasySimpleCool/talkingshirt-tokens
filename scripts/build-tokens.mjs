@@ -14,13 +14,13 @@ const ROOT = process.cwd();
 const TOKENS_DIR = "tokens";
 const OUT_DIR = resolve(ROOT, "dist");
 
-// Source paths — Token Studio's multi-file layout under tokens/, emoji-
-// prefixed folders. Kept under a subfolder so TS's sync only sees token
-// files, not package.json/dist/etc.
+// Source paths — Token Studio's multi-file layout under tokens/. TS
+// conventions: single-set tiers are flat .json files, multi-set tiers
+// are folders containing files prefixed with "↳ ".
 const SRC = {
-  input: `${TOKENS_DIR}/🔵 Input/default.json`,
-  screenMobile: `${TOKENS_DIR}/🟠 Screen/mobile.json`,
-  screenDesktop: `${TOKENS_DIR}/🟠 Screen/desktop.json`,
+  input: `${TOKENS_DIR}/🔵 Input.json`,
+  screenMobile: `${TOKENS_DIR}/🟠 Screen/↳ mobile.json`,
+  screenDesktop: `${TOKENS_DIR}/🟠 Screen/↳ desktop.json`,
 };
 
 for (const [name, path] of Object.entries(SRC)) {
@@ -29,27 +29,28 @@ for (const [name, path] of Object.entries(SRC)) {
   }
 }
 
-// Output tier sources — semantic theme tokens in 🟢 Output/, component
-// tokens in 🟣 Comps/. Order matters for cross-set refs (e.g.
+// Output tier sources — semantic theme tokens (🟢 Output) plus component
+// tokens (🟣 Comps/*). Order matters for cross-set refs (e.g.
 // comp.post.gap → comp.stack.sm), so we read it from Token Studio's
 // $metadata.json instead of globbing — TS maintains tokenSetOrder as you
-// add or reorder sets in the UI. Set names are stored without the tokens/
-// prefix (that's the TS base path), so we prepend it for the fs.
+// add or reorder sets in the UI.
 //
-// Add new top-level folders here to include them in output.css:
-const OUTPUT_TIER_PREFIXES = ["🟢 Output/", "🟣 Comps/"];
+// Matchers cover both flat single-set tiers and folder-based multi-set
+// tiers. Add new top-level groups here to include them in output.css.
+const OUTPUT_TIER_MATCHERS = [
+  (s) => s === "🟢 Output",
+  (s) => s.startsWith("🟣 Comps/"),
+];
 
 const metadata = JSON.parse(
   readFileSync(resolve(ROOT, TOKENS_DIR, "$metadata.json"), "utf8"),
 );
 const outputSets = metadata.tokenSetOrder
-  .filter((s) => OUTPUT_TIER_PREFIXES.some((p) => s.startsWith(p)))
+  .filter((s) => OUTPUT_TIER_MATCHERS.some((m) => m(s)))
   .map((s) => `${TOKENS_DIR}/${s}.json`);
 
 if (outputSets.length === 0) {
-  throw new Error(
-    `No sets matching [${OUTPUT_TIER_PREFIXES.join(", ")}] found in $metadata.json tokenSetOrder`,
-  );
+  throw new Error("No output-tier sets found in $metadata.json tokenSetOrder");
 }
 for (const path of outputSets) {
   if (!existsSync(resolve(ROOT, path))) {

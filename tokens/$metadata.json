@@ -1,13 +1,13 @@
 {
   "tokenSetOrder": [
-    "🔵 Input/default",
-    "🟠 Screen/mobile",
-    "🟠 Screen/desktop",
-    "🟢 Output/theme",
-    "🟣 Comps/button",
-    "🟣 Comps/container",
-    "🟣 Comps/section",
-    "🟣 Comps/stack",
-    "🟣 Comps/post"
+    "🔵 Input",
+    "🟠 Screen/↳ mobile",
+    "🟠 Screen/↳ desktop",
+    "🟢 Output",
+    "🟣 Comps/↳ button",
+    "🟣 Comps/↳ container",
+    "🟣 Comps/↳ section",
+    "🟣 Comps/↳ stack",
+    "🟣 Comps/↳ post"
   ]
 }

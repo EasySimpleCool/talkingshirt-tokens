@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "id": "theme-input",
+    "name": "Value",
+    "selectedTokenSets": {
+      "🔵 Input": "enabled"
+    },
+    "group": "🔵 Input"
+  },
+  {
+    "id": "theme-screen-mobile",
+    "name": "Mobile",
+    "selectedTokenSets": {
+      "🟠 Screen/↳ mobile": "enabled",
+      "🔵 Input": "source"
+    },
+    "group": "🟠 Screen"
+  },
+  {
+    "id": "theme-screen-desktop",
+    "name": "Desktop",
+    "selectedTokenSets": {
+      "🟠 Screen/↳ desktop": "enabled",
+      "🔵 Input": "source"
+    },
+    "group": "🟠 Screen"
+  },
+  {
+    "id": "theme-output",
+    "name": "Value",
+    "selectedTokenSets": {
+      "🟢 Output": "enabled",
+      "🔵 Input": "source",
+      "🟠 Screen/↳ mobile": "source"
+    },
+    "group": "🟢 Output"
+  },
+  {
+    "id": "theme-comps",
+    "name": "Value",
+    "selectedTokenSets": {
+      "🟣 Comps/↳ button": "enabled",
+      "🟣 Comps/↳ container": "enabled",
+      "🟣 Comps/↳ section": "enabled",
+      "🟣 Comps/↳ stack": "enabled",
+      "🟣 Comps/↳ post": "enabled",
+      "🔵 Input": "source",
+      "🟠 Screen/↳ mobile": "source"
+    },
+    "group": "🟣 Comps"
+  }
+]
