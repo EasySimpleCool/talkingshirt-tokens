@@ -4,14 +4,14 @@
     --number-sm: var(--number-16);
     --number-md: var(--number-24);
     --number-lg: var(--number-40);
-    --common-main-body: 800;
+    --common-main-body: 800px;
   }
 }
 [data-screen="mobile"] {
   --number-sm: var(--number-16);
   --number-md: var(--number-24);
   --number-lg: var(--number-40);
-  --common-main-body: 800;
+  --common-main-body: 800px;
 }
 
 /* Screen tier: desktop */
@@ -20,12 +20,12 @@
     --number-sm: var(--number-24);
     --number-md: var(--number-40);
     --number-lg: var(--number-80);
-    --common-main-body: 800;
+    --common-main-body: 800px;
   }
 }
 [data-screen="desktop"] {
   --number-sm: var(--number-24);
   --number-md: var(--number-40);
   --number-lg: var(--number-80);
-  --common-main-body: 800;
+  --common-main-body: 800px;
 }

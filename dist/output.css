@@ -3,7 +3,7 @@
  */
 
 :root {
-  --comp-button-min-h: 56;
+  --comp-button-min-h: 56px;
   --theme-fg: var(--color-black);
   --theme-bg: var(--color-white);
   --theme-faint: var(--color-grey-2);

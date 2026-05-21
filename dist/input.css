@@ -14,14 +14,14 @@
   --color-red-2: #fff5f5;
   --color-yellow: #d69e2e;
   --color-yellow-2: #fffbeb;
-  --number-0: 0;
-  --number-1: 1;
-  --number-4: 4;
-  --number-8: 8;
-  --number-12: 12;
-  --number-16: 16;
-  --number-24: 24;
-  --number-40: 40;
-  --number-80: 80;
-  --number-160: 160;
+  --number-0: 0px;
+  --number-1: 1px;
+  --number-4: 4px;
+  --number-8: 8px;
+  --number-12: 12px;
+  --number-16: 16px;
+  --number-24: 24px;
+  --number-40: 40px;
+  --number-80: 80px;
+  --number-160: 160px;
 }
