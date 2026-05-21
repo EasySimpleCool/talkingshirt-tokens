@@ -7,7 +7,13 @@
 
 import StyleDictionary from "style-dictionary";
 import { register } from "@tokens-studio/sd-transforms";
-import { mkdirSync, readFileSync, writeFileSync, rmSync, existsSync } from "node:fs";
+import {
+  mkdirSync,
+  readFileSync,
+  writeFileSync,
+  rmSync,
+  existsSync,
+} from "node:fs";
 import { resolve, join } from "node:path";
 
 const ROOT = process.cwd();
@@ -56,6 +62,30 @@ for (const path of outputSets) {
     throw new Error(`Missing source: ${path}`);
   }
 }
+
+// --- Custom transform: px units for number-typed tokens ----------------
+// Token Studio's built-in ts/size/px only fires on fontSize/dimension/
+// borderRadius/spacing types. Our tokens use $type: "number" because they
+// represent abstract scale values that could be consumed by non-CSS
+// platforms (where px is meaningless). For CSS output, we treat any
+// numeric value as a pixel dimension.
+//
+// transitive: true → runs after refs resolve, so chained refs get units.
+// Returns the value untouched if it's already a non-numeric string (e.g.
+// a reference token that outputReferences will preserve as var(...)) or
+// already carries a unit.
+StyleDictionary.registerTransform({
+  name: "ts/size/px-number",
+  type: "value",
+  transitive: true,
+  filter: (token) => token.$type === "number" || token.type === "number",
+  transform: (token) => {
+    const v = token.$value ?? token.value;
+    if (typeof v === "number") return `${v}px`;
+    if (typeof v === "string" && /^-?\d+(\.\d+)?$/.test(v)) return `${v}px`;
+    return v;
+  },
+});
 
 // Register Tokens Studio transforms — handles $type/$value DTCG syntax,
 // strips $extensions, etc. No name transform is included, so we add one.
@@ -115,7 +145,9 @@ async function buildTier({ name, include = [], source, format, options = {} }) {
     platforms: {
       css: {
         transformGroup: "tokens-studio",
-        transforms: ["name/kebab"],
+        // Append our px-number transform plus name/kebab. The tokens-studio
+        // group runs first, then these.
+        transforms: ["ts/size/px-number", "name/kebab"],
         buildPath: `${OUT_DIR}/`,
         files: [
           {
