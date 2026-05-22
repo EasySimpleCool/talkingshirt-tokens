@@ -128,10 +128,18 @@ StyleDictionary.registerFormat({
 // output to tokens that originated in a source file, so upstream tiers
 // don't bleed into the wrong CSS file.
 
-async function buildTier({ name, include = [], source, format, options = {} }) {
+async function buildTier({
+  name,
+  include = [],
+  source,
+  format,
+  options = {},
+  expand,
+}) {
   const sd = new StyleDictionary({
     include,
     source,
+    ...(expand ? { expand } : {}),
     preprocessors: ["tokens-studio"],
     platforms: {
       css: {
@@ -196,6 +204,8 @@ await buildTier({
   source: [SRC.output],
   format: "css/variables",
   options: { outputReferences: true },
+  // Expand typography composites into per-property vars for CSS consumption.
+  expand: { include: ["typography"] },
 });
 
 // Comps — component tokens → :root, referencing Output/Screen/Input.

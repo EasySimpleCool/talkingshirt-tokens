@@ -3,6 +3,16 @@
  */
 
 :root {
+  --text-medium-font-family: var(--font-family);
+  --text-medium-font-weight: var(--font-weight-bold);
+  --text-medium-font-size: var(--number-24);
+  --text-medium-line-height: var(--font-line-height-normal);
+  --text-medium-letter-spacing: var(--number-0);
+  --text-small-font-family: var(--font-family);
+  --text-small-font-weight: var(--font-weight-medium);
+  --text-small-font-size: var(--number-12);
+  --text-small-line-height: var(--font-line-height-normal);
+  --text-small-letter-spacing: var(--number-0);
   --theme-fg: var(--color-black);
   --theme-bg: var(--color-white);
   --theme-faint: var(--color-grey-2);

@@ -53,5 +53,47 @@
       "$type": "color",
       "$value": "{color.grey-3}"
     }
+  },
+  "text": {
+    "medium": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FONT_FAMILY",
+          "FONT_STYLE",
+          "FONT_SIZE",
+          "LINE_HEIGHT",
+          "LETTER_SPACING"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family}",
+        "fontWeight": "{font.weight.bold}",
+        "fontSize": "{number.24}",
+        "lineHeight": "{font.line-height.normal}",
+        "letterSpacing": "{number.0}"
+      }
+    },
+    "small": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "FONT_FAMILY",
+          "FONT_STYLE",
+          "FONT_SIZE",
+          "LINE_HEIGHT",
+          "LETTER_SPACING"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family}",
+        "fontWeight": "{font.weight.medium}",
+        "fontSize": "{number.12}",
+        "lineHeight": "{font.line-height.normal}",
+        "letterSpacing": "{number.0}"
+      }
+    }
   }
 }

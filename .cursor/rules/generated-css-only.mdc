@@ -1,0 +1,24 @@
+---
+description: All CSS is generated from design tokens — never edit CSS by hand
+alwaysApply: true
+---
+
+# Generated CSS only
+
+Do **not** edit CSS files directly. Every CSS variable and rule in this repo must come from the token build.
+
+## Source of truth
+
+- Edit token JSON under `tokens/` (and `scripts/build-tokens.mjs` only when changing how tokens compile to CSS).
+- Regenerate output with `npm run build` (runs `scripts/build-tokens.mjs`).
+
+## Do not edit
+
+- `dist/**/*.css` — auto-generated; changes will be overwritten on the next build.
+- Do not add hand-written `.css` files for design tokens or theme/component styles.
+
+## When CSS needs to change
+
+1. Update the relevant token set(s) in `tokens/`.
+2. Run `npm run build`.
+3. Commit the updated token sources; `dist/` may be committed if this repo ships built CSS, but it must always be produced by the build script, never patched by hand.
