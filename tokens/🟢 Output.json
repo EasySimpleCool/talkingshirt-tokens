@@ -69,7 +69,7 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{font.family}",
-        "fontWeight": "{font.weight.bold}",
+        "fontWeight": "{font.bold}",
         "fontSize": "{number.24}",
         "lineHeight": "{font.line-height.normal}",
         "letterSpacing": "{number.0}"
@@ -89,7 +89,7 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{font.family}",
-        "fontWeight": "{font.weight.medium}",
+        "fontWeight": "{font.medium}",
         "fontSize": "{number.12}",
         "lineHeight": "{font.line-height.normal}",
         "letterSpacing": "{number.0}"
