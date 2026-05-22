@@ -14,10 +14,10 @@
   --color-red-2: #fff5f5;
   --color-yellow: #d69e2e;
   --color-yellow-2: #fffbeb;
-  --font-family: 'Helvetica Neue';
-  --font-bold: 700;
-  --font-medium: 500;
-  --font-line-height-normal: 100%;
+  --font-family-base: 'Helvetica Neue';
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --line-height-normal: 100%;
   --number-0: 0px;
   --number-1: 1px;
   --number-4: 4px;

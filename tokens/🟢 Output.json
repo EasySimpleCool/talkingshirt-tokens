@@ -68,10 +68,10 @@
       },
       "$type": "typography",
       "$value": {
-        "fontFamily": "{font.family}",
-        "fontWeight": "{font.bold}",
+        "fontFamily": "{font-family.base}",
+        "fontWeight": "{font-weight.bold}",
         "fontSize": "{number.24}",
-        "lineHeight": "{font.line-height.normal}",
+        "lineHeight": "{line-height.normal}",
         "letterSpacing": "{number.0}"
       }
     },
@@ -88,10 +88,10 @@
       },
       "$type": "typography",
       "$value": {
-        "fontFamily": "{font.family}",
-        "fontWeight": "{font.medium}",
+        "fontFamily": "{font-family.base}",
+        "fontWeight": "{font-weight.medium}",
         "fontSize": "{number.12}",
-        "lineHeight": "{font.line-height.normal}",
+        "lineHeight": "{line-height.normal}",
         "letterSpacing": "{number.0}"
       }
     }

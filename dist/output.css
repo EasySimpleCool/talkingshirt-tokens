@@ -8,14 +8,14 @@
   --theme-faint: var(--color-grey-2);
   --theme-fg-alt: var(--color-grey);
   --theme-faint-alt: var(--color-grey-3);
-  --text-medium-font-family: var(--font-family);
-  --text-medium-font-weight: var(--font-bold);
+  --text-medium-font-family: var(--font-family-base);
+  --text-medium-font-weight: var(--font-weight-bold);
   --text-medium-font-size: var(--number-24);
-  --text-medium-line-height: var(--font-line-height-normal);
+  --text-medium-line-height: var(--line-height-normal);
   --text-medium-letter-spacing: var(--number-0);
-  --text-small-font-family: var(--font-family);
-  --text-small-font-weight: var(--font-medium);
+  --text-small-font-family: var(--font-family-base);
+  --text-small-font-weight: var(--font-weight-medium);
   --text-small-font-size: var(--number-12);
-  --text-small-line-height: var(--font-line-height-normal);
+  --text-small-line-height: var(--line-height-normal);
   --text-small-letter-spacing: var(--number-0);
 }

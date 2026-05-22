@@ -89,15 +89,17 @@
       "$value": "#fffbeb"
     }
   },
-  "font": {
-    "family": {
+  "font-family": {
+    "base": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false,
         "com.figma.scopes": []
       },
       "$type": "fontFamily",
       "$value": "Helvetica Neue"
-    },
+    }
+  },
+  "font-weight": {
     "bold": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false,
@@ -113,16 +115,16 @@
       },
       "$type": "fontWeight",
       "$value": 500
-    },
-    "line-height": {
-      "normal": {
-        "$extensions": {
-          "com.figma.hiddenFromPublishing": false,
-          "com.figma.scopes": []
-        },
-        "$type": "dimension",
-        "$value": "100%"
-      }
+    }
+  },
+  "line-height": {
+    "normal": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.scopes": []
+      },
+      "$type": "dimension",
+      "$value": "100%"
     }
   },
   "number": {
