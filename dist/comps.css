@@ -11,15 +11,15 @@
   --comp-button-v-pad: var(--number-8);
   --comp-button-h-pad: var(--number-16);
   --comp-container-max-w: var(--common-main-body);
-  --comp-section-lg-v-pad: var(--number-40);
-  --comp-section-lg-h-pad: var(--number-24);
-  --comp-section-md-h-pad: var(--number-24);
-  --comp-section-md-v-pad: var(--number-24);
   --comp-section-md-height: var(--number-80);
+  --comp-stack-2xs: var(--number-4);
+  --comp-stack-xs: var(--number-8);
   --comp-stack-sm: var(--number-12);
   --comp-stack-md: var(--number-24);
   --comp-stack-lg: var(--number-40);
-  --comp-stack-xs: var(--number-8);
-  --comp-stack-2xs: var(--number-4);
+  --comp-section-lg-h-pad: var(--number-sm);
+  --comp-section-lg-v-pad: var(--number-lg);
+  --comp-section-md-h-pad: var(--number-sm);
+  --comp-section-md-v-pad: var(--number-sm);
   --comp-post-gap: var(--comp-stack-sm);
 }
