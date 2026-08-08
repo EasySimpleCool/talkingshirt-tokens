@@ -68,7 +68,7 @@
       },
       "$type": "typography",
       "$value": {
-        "fontFamily": "{font-family.base}",
+        "fontFamily": "{font-family.inter}",
         "fontWeight": "{font-weight.bold}",
         "fontSize": "{number.24}",
         "lineHeight": "{line-height.normal}",
@@ -88,7 +88,7 @@
       },
       "$type": "typography",
       "$value": {
-        "fontFamily": "{font-family.base}",
+        "fontFamily": "{font-family.inter}",
         "fontWeight": "{font-weight.medium}",
         "fontSize": "{number.12}",
         "lineHeight": "{line-height.normal}",
