@@ -95,8 +95,8 @@
         "com.figma.hiddenFromPublishing": false,
         "com.figma.scopes": []
       },
-      "$type": "fontFamily",
-      "$value": "Helvetica Neue"
+      "$type": "fontFamilies",
+      "$value": "Inter"
     }
   },
   "font-weight": {
@@ -105,7 +105,7 @@
         "com.figma.hiddenFromPublishing": false,
         "com.figma.scopes": []
       },
-      "$type": "fontWeight",
+      "$type": "fontWeights",
       "$value": 700
     },
     "medium": {
@@ -113,7 +113,7 @@
         "com.figma.hiddenFromPublishing": false,
         "com.figma.scopes": []
       },
-      "$type": "fontWeight",
+      "$type": "fontWeights",
       "$value": 500
     }
   },
