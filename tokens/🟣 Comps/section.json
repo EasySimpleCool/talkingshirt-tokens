@@ -2,16 +2,6 @@
   "comp": {
     "section": {
       "lg": {
-        "v-pad": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "GAP"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "$type": "number",
-          "$value": "{number.40}"
-        },
         "h-pad": {
           "$extensions": {
             "com.figma.scopes": [
@@ -20,19 +10,23 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "number",
-          "$value": "{number.24}"
+          "$value": "{number.sm}"
+        },
+        "v-pad": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "number",
+          "$value": "{number.lg}"
         }
       },
       "md": {
         "h-pad": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "GAP"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
           "$type": "number",
-          "$value": "{number.24}"
+          "$value": "{number.sm}"
         },
         "v-pad": {
           "$extensions": {
@@ -42,7 +36,7 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "number",
-          "$value": "{number.24}"
+          "$value": "{number.sm}"
         },
         "height": {
           "$extensions": {
