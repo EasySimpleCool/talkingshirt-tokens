@@ -88,6 +88,14 @@
         },
         "$type": "color",
         "$value": "#fffbeb"
+      },
+      "yellow-2-copy": {
+        "$extensions": {
+          "com.figma.scopes": [],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "color",
+        "$value": "#fffbeb"
       }
     },
     "font-family": {
