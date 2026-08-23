@@ -3,60 +3,24 @@
     "displaymode": {
       "color": {
         "fg": {
-          "primary": {
-            "$extensions": {
-              "com.figma.scopes": [
-                "ALL_SCOPES"
-              ],
-              "com.figma.hiddenFromPublishing": false
-            },
-            "$type": "color",
-            "$value": "{color.white}"
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
           },
-          "secondary": {
-            "$extensions": {
-              "com.figma.scopes": [
-                "ALL_SCOPES"
-              ],
-              "com.figma.hiddenFromPublishing": false
-            },
-            "$type": "color",
-            "$value": "{color.grey-3}"
-          }
+          "$type": "color",
+          "$value": "{input.color.white}"
         },
         "bg": {
-          "default": {
-            "$extensions": {
-              "com.figma.scopes": [
-                "ALL_SCOPES"
-              ],
-              "com.figma.hiddenFromPublishing": false
-            },
-            "$type": "color",
-            "$value": "{color.black}"
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
           },
-          "alt": {
-            "$extensions": {
-              "com.figma.scopes": [
-                "ALL_SCOPES"
-              ],
-              "com.figma.hiddenFromPublishing": false
-            },
-            "$type": "color",
-            "$value": "{color.grey}"
-          }
-        },
-        "stroke": {
-          "default": {
-            "$extensions": {
-              "com.figma.scopes": [
-                "STROKE_COLOR"
-              ],
-              "com.figma.hiddenFromPublishing": false
-            },
-            "$type": "color",
-            "$value": "{color.grey}"
-          }
+          "$type": "color",
+          "$value": "{input.color.black}"
         }
       }
     }

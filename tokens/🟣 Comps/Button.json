@@ -9,27 +9,35 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "color",
-        "$value": "{color.black}"
+        "$value": "{output.color.accent}"
       },
       "bg-hover": {
         "$extensions": {
           "com.figma.scopes": [
             "FRAME_FILL"
           ],
-          "com.figma.hiddenFromPublishing": false
+          "com.figma.hiddenFromPublishing": false,
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.1",
+              "space": "lch"
+            }
+          }
         },
         "$type": "color",
-        "$value": "{color.grey}"
+        "$value": "{output.color.accent}"
       },
       "fg": {
         "$extensions": {
           "com.figma.scopes": [
-            "TEXT_FILL"
+            "TEXT_FILL",
+            "SHAPE_FILL"
           ],
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "color",
-        "$value": "{color.white}"
+        "$value": "{output.color.on-accent}"
       },
       "b-rad": {
         "$extensions": {
@@ -39,7 +47,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{number.8}"
+        "$value": "{input.number.8}"
       },
       "v-pad": {
         "$extensions": {
@@ -49,7 +57,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{number.8}"
+        "$value": "{input.number.8}"
       },
       "h-pad": {
         "$extensions": {
@@ -59,7 +67,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{number.16}"
+        "$value": "{input.number.16}"
       },
       "min-h": {
         "$extensions": {

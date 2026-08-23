@@ -10,7 +10,7 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "number",
-          "$value": "{number.sm}"
+          "$value": "{modify.screen.number.number.sm}"
         },
         "v-pad": {
           "$extensions": {
@@ -20,13 +20,13 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "number",
-          "$value": "{number.lg}"
+          "$value": "{modify.screen.number.number.lg}"
         }
       },
       "md": {
         "h-pad": {
           "$type": "number",
-          "$value": "{number.sm}"
+          "$value": "{modify.screen.number.number.sm}"
         },
         "v-pad": {
           "$extensions": {
@@ -36,7 +36,7 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "number",
-          "$value": "{number.sm}"
+          "$value": "{modify.screen.number.number.sm}"
         },
         "height": {
           "$extensions": {
@@ -46,7 +46,7 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "number",
-          "$value": "{number.80}"
+          "$value": "{input.number.80}"
         }
       }
     }

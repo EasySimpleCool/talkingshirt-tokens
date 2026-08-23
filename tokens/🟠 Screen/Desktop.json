@@ -1,38 +1,44 @@
 {
-  "common": {
-    "main-body": {
-      "$extensions": {
-        "com.figma.hiddenFromPublishing": false,
-        "com.figma.scopes": []
-      },
-      "$type": "number",
-      "$value": "800"
-    }
-  },
-  "number": {
-    "sm": {
-      "$extensions": {
-        "com.figma.hiddenFromPublishing": false,
-        "com.figma.scopes": []
-      },
-      "$type": "number",
-      "$value": "{number.24}"
-    },
-    "md": {
-      "$extensions": {
-        "com.figma.hiddenFromPublishing": false,
-        "com.figma.scopes": []
-      },
-      "$type": "number",
-      "$value": "{number.40}"
-    },
-    "lg": {
-      "$extensions": {
-        "com.figma.hiddenFromPublishing": false,
-        "com.figma.scopes": []
-      },
-      "$type": "number",
-      "$value": "{number.80}"
+  "modify": {
+    "screen": {
+      "number": {
+        "common": {
+          "main-body": {
+            "$extensions": {
+              "com.figma.hiddenFromPublishing": false,
+              "com.figma.scopes": []
+            },
+            "$type": "number",
+            "$value": "800"
+          }
+        },
+        "number": {
+          "sm": {
+            "$extensions": {
+              "com.figma.hiddenFromPublishing": false,
+              "com.figma.scopes": []
+            },
+            "$type": "number",
+            "$value": "{input.number.24}"
+          },
+          "md": {
+            "$extensions": {
+              "com.figma.hiddenFromPublishing": false,
+              "com.figma.scopes": []
+            },
+            "$type": "number",
+            "$value": "{input.number.40}"
+          },
+          "lg": {
+            "$extensions": {
+              "com.figma.hiddenFromPublishing": false,
+              "com.figma.scopes": []
+            },
+            "$type": "number",
+            "$value": "{input.number.80}"
+          }
+        }
+      }
     }
   }
 }

@@ -9,7 +9,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{common.main-body}"
+        "$value": "{modify.screen.number.common.main-body}"
       }
     }
   }

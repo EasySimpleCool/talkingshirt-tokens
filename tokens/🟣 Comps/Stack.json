@@ -9,7 +9,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{number.4}"
+        "$value": "{input.number.4}"
       },
       "xs": {
         "$extensions": {
@@ -19,7 +19,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{number.8}"
+        "$value": "{input.number.8}"
       },
       "sm": {
         "$extensions": {
@@ -29,7 +29,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{number.12}"
+        "$value": "{input.number.12}"
       },
       "md": {
         "$extensions": {
@@ -39,7 +39,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{number.24}"
+        "$value": "{input.number.24}"
       },
       "lg": {
         "$extensions": {
@@ -49,7 +49,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": "{number.40}"
+        "$value": "{input.number.40}"
       }
     }
   }
