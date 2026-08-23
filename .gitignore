@@ -1,2 +1,6 @@
 node_modules/
 .DS_Store
+
+# Preview build artifacts (npm run preview)
+token-matrix.json
+preview.html

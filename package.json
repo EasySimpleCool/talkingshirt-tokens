@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-tokens.mjs"
+    "build": "node scripts/build-tokens.mjs",
+    "preview": "node scripts/preview-tokens.mjs"
   },
   "devDependencies": {
     "style-dictionary": "^4.3.0",
