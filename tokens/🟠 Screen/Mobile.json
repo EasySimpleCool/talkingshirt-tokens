@@ -1,40 +1,42 @@
 {
   "modify": {
-    "number": {
-      "common": {
-        "main-body": {
-          "$extensions": {
-            "com.figma.hiddenFromPublishing": false,
-            "com.figma.scopes": []
-          },
-          "$type": "number",
-          "$value": "800"
-        }
-      },
+    "screen": {
       "number": {
-        "sm": {
-          "$extensions": {
-            "com.figma.hiddenFromPublishing": false,
-            "com.figma.scopes": []
-          },
-          "$type": "number",
-          "$value": "{input.number.16}"
+        "common": {
+          "main-body": {
+            "$extensions": {
+              "com.figma.hiddenFromPublishing": false,
+              "com.figma.scopes": []
+            },
+            "$type": "number",
+            "$value": "800"
+          }
         },
-        "md": {
-          "$extensions": {
-            "com.figma.hiddenFromPublishing": false,
-            "com.figma.scopes": []
+        "number": {
+          "sm": {
+            "$extensions": {
+              "com.figma.hiddenFromPublishing": false,
+              "com.figma.scopes": []
+            },
+            "$type": "number",
+            "$value": "{input.number.16}"
           },
-          "$type": "number",
-          "$value": "{input.number.24}"
-        },
-        "lg": {
-          "$extensions": {
-            "com.figma.hiddenFromPublishing": false,
-            "com.figma.scopes": []
+          "md": {
+            "$extensions": {
+              "com.figma.hiddenFromPublishing": false,
+              "com.figma.scopes": []
+            },
+            "$type": "number",
+            "$value": "{input.number.24}"
           },
-          "$type": "number",
-          "$value": "{input.number.40}"
+          "lg": {
+            "$extensions": {
+              "com.figma.hiddenFromPublishing": false,
+              "com.figma.scopes": []
+            },
+            "$type": "number",
+            "$value": "{input.number.40}"
+          }
         }
       }
     }
