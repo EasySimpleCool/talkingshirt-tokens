@@ -21,8 +21,8 @@
           "com.figma.hiddenFromPublishing": false,
           "studio.tokens": {
             "modify": {
-              "type": "lighten",
-              "value": ".5",
+              "type": "alpha",
+              "value": ".1",
               "space": "lch"
             }
           }
@@ -31,6 +31,16 @@
         "$value": "{modify.displaymode.color.fg}"
       },
       "bg": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_FILLS"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "color",
+        "$value": "{modify.displaymode.color.bg}"
+      },
+      "bg-alt": {
         "$extensions": {
           "com.figma.scopes": [
             "ALL_FILLS"
@@ -57,15 +67,15 @@
           }
         },
         "$type": "color",
-        "$value": "{modify.displaymode.color.fg}"
+        "$value": "{modify.displaymode.color.faint}"
       },
       "accent": {
         "$type": "color",
-        "$value": "{modify.displaymode.color.fg}"
+        "$value": "{modify.displaymode.color.accent}"
       },
       "on-accent": {
         "$type": "color",
-        "$value": "{modify.displaymode.color.bg}"
+        "$value": "{modify.displaymode.color.on-accent}"
       }
     },
     "text": {

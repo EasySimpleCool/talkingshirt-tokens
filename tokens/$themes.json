@@ -8,30 +8,30 @@
     "$figmaCollectionId": "VariableCollectionId:443:2",
     "$figmaModeId": "443:0",
     "$figmaVariableReferences": {
-      "color.black": "61a9eb7e41b58658fb6c8b6bbe7a4589b8c59847",
-      "color.white": "33ba8a10424da0f16b92aab63c2607d3e069efc9",
-      "color.grey": "2e6168ecd31318f339630d29557bb50eab989d35",
-      "color.grey-2": "e6653c3bed95d5429db6bd00cd992a9b6861237a",
-      "color.grey-3": "5d6aa1bf51d4714d1e8c6258d1099e189708124d",
-      "color.green": "6551a35e2d83bee32a79d6f5157625d97e84251e",
-      "color.green-2": "605ddcb2db9faa5aecec4b66f268a549bd6da55f",
-      "color.red": "42b68c375f36e51401970e7a2d443568cf599c9a",
-      "color.red-2": "44800bfbf88d272bd237da2ad81e8d305d650908",
-      "color.yellow": "da28bd961f17ff9d39c26a8c1e6bc2acb63dbdce",
-      "color.yellow-2": "8280f89ddcc0e1ed1893eb5380f71b53bb33c5a2",
-      "font-family.inter": "4b63a98f1fb3f61a20276098a9d174d6106b79bb",
-      "font-weight.bold": "0b5376fba6b9d936f3746aa81800dba402d22921",
-      "font-weight.medium": "3ae6c6fa2a099a86ce6cdbd1a52b2e06fa1076d7",
-      "number.0": "da4f61f519a1e981633daf768b8fd5031c7d2dca",
-      "number.1": "0e5379c72bb69bf25e8c010b5e8481da38262ed2",
-      "number.4": "622c9658cbcd47be3ce22892bad50b66568284a3",
-      "number.8": "b8d2b6ed942118ce52c22d5ff4fc9f7fb4f2e623",
-      "number.12": "adb9037942a758d3f0a8eab7174dc76bb63d3f66",
-      "number.16": "7db7a50d9ef61dc4e973efb91a211a257740e80f",
-      "number.24": "ffd3487d272149e047a6f2156192c10909b9010a",
-      "number.40": "db762d0dcaf3ee09faefb85531a8ef07a83d1c13",
-      "number.80": "bd05a0726d7ae9211ff0b8390a08aa9f33684b55",
-      "number.160": "fa76c2fdae1c454e0cf393576524413b7f2772a1"
+      "input.color.black": "15b659974d77b1d512752c542cae97aec0eca6e0",
+      "input.color.white": "c44939cc00e08994dc4aea7e942a63581f9486bb",
+      "input.color.grey": "0516eb08a7e7234b26c2ea2fcf79318646741898",
+      "input.color.grey-2": "84b870a8c09b2109edce8557a2fb33cc16fe31d3",
+      "input.color.grey-3": "d07924ad5ef8391b780d96e9ad6acccc4ffad8fb",
+      "input.color.green": "4279b6f59655b9c4a621c8b8bff4eec68fd52219",
+      "input.color.green-2": "80ba9b41bcd5e09faee98f594aaa89fa87d78deb",
+      "input.color.red": "bc2e15a728927361523c8ee8f4200ac3d9cfb808",
+      "input.color.red-2": "f41f6dd8235b220fe410790174fd2aca0c64c4e2",
+      "input.color.yellow": "366ffef142a15e5a6d6f1dfb2e488141f5d9320d",
+      "input.color.yellow-2": "a2f99840f8fb0dfea986a83426e4556935b73a01",
+      "input.font-family.inter": "cce2611bb658e3e21a59b7b5a6e21963c5be8d1d",
+      "input.font-weight.bold": "061164fe95e8aa722f74675d471ab2e342497176",
+      "input.font-weight.medium": "225f07707cfb8946dd038a6ef251fecbe200c478",
+      "input.number.0": "734a26a63a75ab6e67ca52070d58d89045ef1968",
+      "input.number.1": "220a1ac84b7642b570e8659f3c5358d32e707380",
+      "input.number.4": "3c22c5bfc09ca32ef0f40b541e801999415df57a",
+      "input.number.8": "4ed179492777ea2bd44fa787e676fc6cbf7629ca",
+      "input.number.12": "b5795e87cbac3c009bcd449acdabff7be5c27981",
+      "input.number.16": "9d4b8b5ea9e2c6b79de2782654d37523a73af82b",
+      "input.number.24": "a881bd51464225022c1e45a10c73254ecd1bf143",
+      "input.number.40": "d8cf192567fa9168509094277bcb5d9f4c000203",
+      "input.number.80": "9b040688acf60daed1dad57302804016fcceb754",
+      "input.number.160": "11a5cc87abb9664130326a7dc8a698f2cda0badf"
     },
     "group": "🔵 Input"
   },
@@ -74,9 +74,11 @@
     "name": "Light",
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
-      "modify.displaymode.color.stroke.default": "cbd5f1c1702f16c4df1b46d70a8d60be6272db7e",
       "modify.displaymode.color.fg": "2f2eaff9ea21613feb95314c746f59fbfda95170",
-      "modify.displaymode.color.bg": "27ea42eb74641123acf96f789cca2c5561635def"
+      "modify.displaymode.color.bg": "27ea42eb74641123acf96f789cca2c5561635def",
+      "modify.displaymode.color.faint": "0dba47468fb16c3fe5427aa7a758a66204650f2f",
+      "modify.displaymode.color.accent": "b9923d24dc1bba7587f8bc6cfc3ed02ea3e43399",
+      "modify.displaymode.color.on-accent": "8eecc1f6852d0ed5b5d98fa55fc7afb01a44b522"
     },
     "$figmaCollectionId": "VariableCollectionId:1021:27",
     "$figmaModeId": "1037:0",
@@ -94,7 +96,10 @@
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "modify.displaymode.color.fg": "2f2eaff9ea21613feb95314c746f59fbfda95170",
-      "modify.displaymode.color.bg": "27ea42eb74641123acf96f789cca2c5561635def"
+      "modify.displaymode.color.bg": "27ea42eb74641123acf96f789cca2c5561635def",
+      "modify.displaymode.color.faint": "0dba47468fb16c3fe5427aa7a758a66204650f2f",
+      "modify.displaymode.color.accent": "b9923d24dc1bba7587f8bc6cfc3ed02ea3e43399",
+      "modify.displaymode.color.on-accent": "8eecc1f6852d0ed5b5d98fa55fc7afb01a44b522"
     },
     "$figmaCollectionId": "VariableCollectionId:1021:27",
     "$figmaModeId": "1037:1",
@@ -118,14 +123,18 @@
     "$figmaCollectionId": "VariableCollectionId:443:4",
     "$figmaModeId": "443:3",
     "$figmaVariableReferences": {
-      "theme.fg": "38a2c16acfcbcd96b46b8aba60fc95d76220ac8f",
-      "theme.bg": "9528018f917f70644fa146d1f01de4420f0e0571",
-      "theme.faint": "08c1ab65916ae364848f9b29c40524eff0db902d",
-      "theme.fg-alt": "3729a73ec467036d0825c00dec82f03dfb37807a"
+      "output.color.fg": "f4f349e9d51cd2e59e26b3c324bf712407d7c456",
+      "output.color.fg-alt": "4d11415c75ec3dcfaf6a68c7bccb45e6c090ba2d",
+      "output.color.bg": "58cf28f70d00e0140837fb6296c48299d4126d6a",
+      "output.color.faint": "4e6047d8c11ef29cc6019d8e9a0dfe69bc460076",
+      "output.color.accent": "f64cdd0c1923b2c9d7316e23663a6cc1629c848c",
+      "output.color.on-accent": "89b2f36cbaa907a1e19ccc120a226097e2510eda"
     },
     "$figmaStyleReferences": {
       "text.medium": "S:08afe6f27d01352a3d1ff8040072c0c56bb85182,",
-      "text.small": "S:9584faf7bc47e6373d9cb91797afa0c3025838bf,"
+      "text.small": "S:9584faf7bc47e6373d9cb91797afa0c3025838bf,",
+      "output.text.medium": "S:993332845c125975470e4ef4869177a38968a5d6,",
+      "output.text.small": "S:0562bab54b33778a3bc2abe213f5e56b65ea95dd,"
     },
     "group": "🟢 Output"
   },

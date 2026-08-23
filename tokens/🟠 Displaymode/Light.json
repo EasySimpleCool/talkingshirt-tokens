@@ -21,6 +21,51 @@
           },
           "$type": "color",
           "$value": "{input.color.white}"
+        },
+        "faint": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false,
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.9",
+                "space": "lch"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{input.color.black}"
+        },
+        "accent": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "color",
+          "$value": "{input.color.black}"
+        },
+        "on-accent": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "color",
+          "$value": "{input.color.white}"
+        }
+      },
+      "number": {
+        "faint": {
+          "$type": "number",
+          "$value": 0.9
         }
       }
     }
