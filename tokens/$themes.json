@@ -19,6 +19,7 @@
       "input.color.red-2": "f41f6dd8235b220fe410790174fd2aca0c64c4e2",
       "input.color.yellow": "366ffef142a15e5a6d6f1dfb2e488141f5d9320d",
       "input.color.yellow-2": "a2f99840f8fb0dfea986a83426e4556935b73a01",
+      "input.color.yellow-2-copy": "027506194ae9f4a49ea0a7cffb6ec6eb497b9e6a",
       "input.font-family.inter": "cce2611bb658e3e21a59b7b5a6e21963c5be8d1d",
       "input.font-weight.bold": "061164fe95e8aa722f74675d471ab2e342497176",
       "input.font-weight.medium": "225f07707cfb8946dd038a6ef251fecbe200c478",
@@ -75,10 +76,7 @@
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "modify.displaymode.color.fg": "2f2eaff9ea21613feb95314c746f59fbfda95170",
-      "modify.displaymode.color.bg": "27ea42eb74641123acf96f789cca2c5561635def",
-      "modify.displaymode.color.faint": "0dba47468fb16c3fe5427aa7a758a66204650f2f",
-      "modify.displaymode.color.accent": "b9923d24dc1bba7587f8bc6cfc3ed02ea3e43399",
-      "modify.displaymode.color.on-accent": "8eecc1f6852d0ed5b5d98fa55fc7afb01a44b522"
+      "modify.displaymode.color.bg": "27ea42eb74641123acf96f789cca2c5561635def"
     },
     "$figmaCollectionId": "VariableCollectionId:1021:27",
     "$figmaModeId": "1037:0",
@@ -96,10 +94,7 @@
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "modify.displaymode.color.fg": "2f2eaff9ea21613feb95314c746f59fbfda95170",
-      "modify.displaymode.color.bg": "27ea42eb74641123acf96f789cca2c5561635def",
-      "modify.displaymode.color.faint": "0dba47468fb16c3fe5427aa7a758a66204650f2f",
-      "modify.displaymode.color.accent": "b9923d24dc1bba7587f8bc6cfc3ed02ea3e43399",
-      "modify.displaymode.color.on-accent": "8eecc1f6852d0ed5b5d98fa55fc7afb01a44b522"
+      "modify.displaymode.color.bg": "27ea42eb74641123acf96f789cca2c5561635def"
     },
     "$figmaCollectionId": "VariableCollectionId:1021:27",
     "$figmaModeId": "1037:1",
@@ -126,6 +121,7 @@
       "output.color.fg": "f4f349e9d51cd2e59e26b3c324bf712407d7c456",
       "output.color.fg-alt": "4d11415c75ec3dcfaf6a68c7bccb45e6c090ba2d",
       "output.color.bg": "58cf28f70d00e0140837fb6296c48299d4126d6a",
+      "output.color.bg-alt": "4548a9fec1399f3f377967ae841c7aaa6526667c",
       "output.color.faint": "4e6047d8c11ef29cc6019d8e9a0dfe69bc460076",
       "output.color.accent": "f64cdd0c1923b2c9d7316e23663a6cc1629c848c",
       "output.color.on-accent": "89b2f36cbaa907a1e19ccc120a226097e2510eda"
