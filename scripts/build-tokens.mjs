@@ -228,9 +228,14 @@ const BANNER = "/* Generated — do not edit. Built from Token Studio sources. *
 
 // --- Custom format: modify tier ----------------------------------------
 // Emits each set's tokens twice — once inside a media query (the viewport or
-// system default), once on a [data-<dimension>="<mode>"] selector (a forced
-// override). The attribute selector beats :root on specificity, so an explicit
-// data-attribute always wins over what the media query says.
+// system default), once on a forced [data-<dimension>="<mode>"] override.
+//
+// The override selector is :root[data-…], not a bare [data-…]. A bare attribute
+// selector and :root have identical specificity (0,1,0), so the winner would be
+// decided by source order — and a later dimension's media-query block would beat
+// an earlier dimension's attribute block, silently ignoring the forced mode.
+// Qualifying with :root raises it to (0,2,0) so a forced attribute always wins,
+// whatever order the sets are emitted in.
 //
 // Plain references emit as var(--name), keeping Input the runtime source of
 // truth rather than copying its values down into every mode.
@@ -239,7 +244,7 @@ StyleDictionary.registerFormat({
   format: ({ dictionary, options }) => {
     const { dimension, mode, mediaQuery } = options;
     const names = buildNameLookup(dictionary);
-    const attribute = `[data-${dimension.toLowerCase()}="${mode.toLowerCase()}"]`;
+    const attribute = `:root[data-${dimension.toLowerCase()}="${mode.toLowerCase()}"]`;
 
     return [
       `/* ${dimension} → ${mode} */`,
