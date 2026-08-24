@@ -10,7 +10,7 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "number",
-          "$value": "{modify.screen.number.number.sm}"
+          "$value": "{output.number.fluid.sm}"
         },
         "v-pad": {
           "$extensions": {
@@ -20,13 +20,13 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "number",
-          "$value": "{modify.screen.number.number.lg}"
+          "$value": "{output.number.fluid.lg}"
         }
       },
       "md": {
         "h-pad": {
           "$type": "number",
-          "$value": "{modify.screen.number.number.sm}"
+          "$value": "{output.number.fluid.sm}"
         },
         "v-pad": {
           "$extensions": {
@@ -36,17 +36,17 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "number",
-          "$value": "{modify.screen.number.number.sm}"
+          "$value": "{output.number.fluid.sm}"
         },
         "height": {
           "$extensions": {
             "com.figma.scopes": [
-              "GAP"
+              "WIDTH_HEIGHT"
             ],
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "number",
-          "$value": "{input.number.80}"
+          "$value": "{output.number.static.80}"
         }
       }
     }

@@ -126,6 +126,36 @@
           "letterSpacing": "{input.number.0}"
         }
       }
+    },
+    "number": {
+      "fluid": {
+        "sm": {
+          "$type": "number",
+          "$value": "{modify.screen.number.number.16-24}"
+        },
+        "md": {
+          "$type": "number",
+          "$value": "{modify.screen.number.number.24-40}"
+        },
+        "lg": {
+          "$type": "number",
+          "$value": "{modify.screen.number.number.40-80}"
+        }
+      },
+      "static": {
+        "24": {
+          "$type": "number",
+          "$value": "{input.number.24}"
+        },
+        "40": {
+          "$type": "number",
+          "$value": "{input.number.40}"
+        },
+        "80": {
+          "$type": "number",
+          "$value": "{input.number.80}"
+        }
+      }
     }
   }
 }
