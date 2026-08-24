@@ -2,7 +2,7 @@
 
 :root {
   --comp-button-bg-default: var(--output-color-accent);
-  --comp-button-bg-hover: rgb(from var(--output-color-accent) r g b / 0.5);
+  --comp-button-bg-hover: color-mix(in oklch, var(--output-color-accent) 85%, var(--output-color-bg));
   --comp-button-fg: var(--output-color-on-accent);
   --comp-button-b-rad: var(--input-number-8);
   --comp-button-v-pad: var(--input-number-8);
