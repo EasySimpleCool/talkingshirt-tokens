@@ -51,6 +51,7 @@
       "modify.screen.number.number.md": "58981585d6b3c79286e36b5e73627e3c30db4fa1",
       "modify.screen.number.number.lg": "fbc3c3fe7c744f8e226f3c3286eca024a1aa7abf"
     },
+    "$figmaStyleReferences": {},
     "group": "🟠 Screen"
   },
   {
@@ -113,7 +114,9 @@
       "🟢 Output": "enabled",
       "🔵 Input": "source",
       "🟠 Screen/Mobile": "source",
-      "🟠 Screen/Desktop": "source"
+      "🟠 Screen/Desktop": "source",
+      "🟠 Displaymode/Light": "source",
+      "🟠 Displaymode/Dark": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:443:4",
     "$figmaModeId": "443:3",
@@ -146,7 +149,9 @@
       "🟣 Comps/Container": "enabled",
       "🟣 Comps/Section": "enabled",
       "🟣 Comps/Stack": "enabled",
-      "🟣 Comps/Post": "enabled"
+      "🟣 Comps/Post": "enabled",
+      "🟠 Displaymode/Light": "source",
+      "🟠 Displaymode/Dark": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:443:5",
     "$figmaModeId": "443:4",
@@ -171,6 +176,7 @@
       "comp.stack.lg": "07b303909d67e29fae3facb449a112dffe27a5bb",
       "comp.post.gap": "08d2ff88ee35612cc2561934623574ca07310cbe"
     },
+    "$figmaStyleReferences": {},
     "group": "🟣 Comps"
   }
 ]

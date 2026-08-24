@@ -19,9 +19,10 @@
           "com.figma.hiddenFromPublishing": false,
           "studio.tokens": {
             "modify": {
-              "type": "alpha",
-              "value": "0.5",
-              "space": "lch"
+              "type": "mix",
+              "value": "0.15",
+              "space": "lch",
+              "color": "{output.color.bg}"
             }
           }
         },
