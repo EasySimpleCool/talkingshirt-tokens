@@ -18,4 +18,10 @@
   --output-text-small-font-size: var(--input-number-12);
   --output-text-small-line-height: var(--input-line-height-normal);
   --output-text-small-letter-spacing: var(--input-number-0);
+  --output-number-fluid-sm: var(--modify-screen-number-number-16-24);
+  --output-number-fluid-md: var(--modify-screen-number-number-24-40);
+  --output-number-fluid-lg: var(--modify-screen-number-number-40-80);
+  --output-number-static-24: var(--input-number-24);
+  --output-number-static-40: var(--input-number-40);
+  --output-number-static-80: var(--input-number-80);
 }

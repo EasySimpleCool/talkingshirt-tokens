@@ -4,32 +4,32 @@
 @media (max-width: 767px) {
   :root {
     --modify-screen-number-common-main-body: 800px;
-    --modify-screen-number-number-sm: var(--input-number-16);
-    --modify-screen-number-number-md: var(--input-number-24);
-    --modify-screen-number-number-lg: var(--input-number-40);
+    --modify-screen-number-number-16-24: var(--input-number-16);
+    --modify-screen-number-number-24-40: var(--input-number-24);
+    --modify-screen-number-number-40-80: var(--input-number-40);
   }
 }
 :root[data-screen="mobile"] {
   --modify-screen-number-common-main-body: 800px;
-  --modify-screen-number-number-sm: var(--input-number-16);
-  --modify-screen-number-number-md: var(--input-number-24);
-  --modify-screen-number-number-lg: var(--input-number-40);
+  --modify-screen-number-number-16-24: var(--input-number-16);
+  --modify-screen-number-number-24-40: var(--input-number-24);
+  --modify-screen-number-number-40-80: var(--input-number-40);
 }
 
 /* Screen → Desktop */
 @media (min-width: 768px) {
   :root {
     --modify-screen-number-common-main-body: 800px;
-    --modify-screen-number-number-sm: var(--input-number-24);
-    --modify-screen-number-number-md: var(--input-number-40);
-    --modify-screen-number-number-lg: var(--input-number-80);
+    --modify-screen-number-number-16-24: var(--input-number-24);
+    --modify-screen-number-number-24-40: var(--input-number-40);
+    --modify-screen-number-number-40-80: var(--input-number-80);
   }
 }
 :root[data-screen="desktop"] {
   --modify-screen-number-common-main-body: 800px;
-  --modify-screen-number-number-sm: var(--input-number-24);
-  --modify-screen-number-number-md: var(--input-number-40);
-  --modify-screen-number-number-lg: var(--input-number-80);
+  --modify-screen-number-number-16-24: var(--input-number-24);
+  --modify-screen-number-number-24-40: var(--input-number-40);
+  --modify-screen-number-number-40-80: var(--input-number-80);
 }
 
 /* Displaymode → Light */

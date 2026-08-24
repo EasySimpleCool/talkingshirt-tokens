@@ -9,11 +9,11 @@
   --comp-button-h-pad: var(--input-number-16);
   --comp-button-min-h: 56px;
   --comp-container-max-w: var(--modify-screen-number-common-main-body);
-  --comp-section-lg-h-pad: var(--modify-screen-number-number-sm);
-  --comp-section-lg-v-pad: var(--modify-screen-number-number-lg);
-  --comp-section-md-h-pad: var(--modify-screen-number-number-sm);
-  --comp-section-md-v-pad: var(--modify-screen-number-number-sm);
-  --comp-section-md-height: var(--input-number-80);
+  --comp-section-lg-h-pad: var(--output-number-fluid-sm);
+  --comp-section-lg-v-pad: var(--output-number-fluid-lg);
+  --comp-section-md-h-pad: var(--output-number-fluid-sm);
+  --comp-section-md-v-pad: var(--output-number-fluid-sm);
+  --comp-section-md-height: var(--output-number-static-80);
   --comp-stack-2xs: var(--input-number-4);
   --comp-stack-xs: var(--input-number-8);
   --comp-stack-sm: var(--input-number-12);
