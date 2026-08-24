@@ -19,7 +19,7 @@
           "com.figma.hiddenFromPublishing": false,
           "studio.tokens": {
             "modify": {
-              "type": "lighten",
+              "type": "alpha",
               "value": "0.5",
               "space": "lch"
             }
