@@ -1,0 +1,57 @@
+/* Generated — do not edit. Built from Token Studio sources. */
+
+/* Screen → Mobile */
+@media (max-width: 767px) {
+  :root {
+    --modify-screen-number-common-main-body: 800px;
+    --modify-screen-number-number-sm: var(--input-number-16);
+    --modify-screen-number-number-md: var(--input-number-24);
+    --modify-screen-number-number-lg: var(--input-number-40);
+  }
+}
+:root[data-screen="mobile"] {
+  --modify-screen-number-common-main-body: 800px;
+  --modify-screen-number-number-sm: var(--input-number-16);
+  --modify-screen-number-number-md: var(--input-number-24);
+  --modify-screen-number-number-lg: var(--input-number-40);
+}
+
+/* Screen → Desktop */
+@media (min-width: 768px) {
+  :root {
+    --modify-screen-number-common-main-body: 800px;
+    --modify-screen-number-number-sm: var(--input-number-24);
+    --modify-screen-number-number-md: var(--input-number-40);
+    --modify-screen-number-number-lg: var(--input-number-80);
+  }
+}
+:root[data-screen="desktop"] {
+  --modify-screen-number-common-main-body: 800px;
+  --modify-screen-number-number-sm: var(--input-number-24);
+  --modify-screen-number-number-md: var(--input-number-40);
+  --modify-screen-number-number-lg: var(--input-number-80);
+}
+
+/* Displaymode → Light */
+@media (prefers-color-scheme: light) {
+  :root {
+    --modify-displaymode-color-fg: var(--input-color-black);
+    --modify-displaymode-color-bg: var(--input-color-white);
+  }
+}
+:root[data-displaymode="light"] {
+  --modify-displaymode-color-fg: var(--input-color-black);
+  --modify-displaymode-color-bg: var(--input-color-white);
+}
+
+/* Displaymode → Dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --modify-displaymode-color-fg: var(--input-color-white);
+    --modify-displaymode-color-bg: var(--input-color-black);
+  }
+}
+:root[data-displaymode="dark"] {
+  --modify-displaymode-color-fg: var(--input-color-white);
+  --modify-displaymode-color-bg: var(--input-color-black);
+}

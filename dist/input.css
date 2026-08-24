@@ -3,29 +3,30 @@
  */
 
 :root {
-  --color-black: #424242;
-  --color-white: #ffffff;
-  --color-grey: #808080;
-  --color-grey-2: #a8a8a8;
-  --color-grey-3: #e0e0e0;
-  --color-green: #22863a;
-  --color-green-2: #f0fff4;
-  --color-red: #c0392b;
-  --color-red-2: #fff5f5;
-  --color-yellow: #d69e2e;
-  --color-yellow-2: #fffbeb;
-  --font-family-inter: Inter;
-  --font-weight-bold: 700;
-  --font-weight-medium: 500;
-  --line-height-normal: 100%;
-  --number-0: 0px;
-  --number-1: 1px;
-  --number-4: 4px;
-  --number-8: 8px;
-  --number-12: 12px;
-  --number-16: 16px;
-  --number-24: 24px;
-  --number-40: 40px;
-  --number-80: 80px;
-  --number-160: 160px;
+  --input-color-black: #424242;
+  --input-color-white: #ffffff;
+  --input-color-grey: #808080;
+  --input-color-grey-2: #a8a8a8;
+  --input-color-grey-3: #e0e0e0;
+  --input-color-green: #22863a;
+  --input-color-green-2: #f0fff4;
+  --input-color-red: #c0392b;
+  --input-color-red-2: #fff5f5;
+  --input-color-yellow: #d69e2e;
+  --input-color-yellow-2: #fffbeb;
+  --input-color-yellow-2-copy: #fffbeb;
+  --input-font-family-inter: Inter;
+  --input-font-weight-bold: 700;
+  --input-font-weight-medium: 500;
+  --input-line-height-normal: 100%;
+  --input-number-0: 0px;
+  --input-number-1: 1px;
+  --input-number-4: 4px;
+  --input-number-8: 8px;
+  --input-number-12: 12px;
+  --input-number-16: 16px;
+  --input-number-24: 24px;
+  --input-number-40: 40px;
+  --input-number-80: 80px;
+  --input-number-160: 160px;
 }

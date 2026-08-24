@@ -1,21 +1,21 @@
-/**
- * Do not edit directly, this file was auto-generated.
- */
+/* Generated — do not edit. Built from Token Studio sources. */
 
 :root {
-  --theme-fg: var(--color-black);
-  --theme-bg: var(--color-white);
-  --theme-faint: var(--color-grey-2);
-  --theme-fg-alt: var(--color-grey);
-  --theme-faint-alt: var(--color-grey-3);
-  --text-medium-font-family: var(--font-family-inter);
-  --text-medium-font-weight: var(--font-weight-bold);
-  --text-medium-font-size: var(--number-24);
-  --text-medium-line-height: var(--line-height-normal);
-  --text-medium-letter-spacing: var(--number-0);
-  --text-small-font-family: var(--font-family-inter);
-  --text-small-font-weight: var(--font-weight-medium);
-  --text-small-font-size: var(--number-12);
-  --text-small-line-height: var(--line-height-normal);
-  --text-small-letter-spacing: var(--number-0);
+  --output-color-fg: var(--modify-displaymode-color-fg);
+  --output-color-fg-alt: rgb(from var(--modify-displaymode-color-fg) r g b / 0.5);
+  --output-color-bg: var(--modify-displaymode-color-bg);
+  --output-color-bg-alt: rgb(from var(--modify-displaymode-color-bg) r g b / 0.5);
+  --output-color-faint: rgb(from var(--modify-displaymode-color-fg) r g b / 0.1);
+  --output-color-accent: var(--modify-displaymode-color-fg);
+  --output-color-on-accent: var(--modify-displaymode-color-bg);
+  --output-text-medium-font-family: var(--input-font-family-inter);
+  --output-text-medium-font-weight: var(--input-font-weight-bold);
+  --output-text-medium-font-size: var(--input-number-24);
+  --output-text-medium-line-height: var(--input-line-height-normal);
+  --output-text-medium-letter-spacing: var(--input-number-0);
+  --output-text-small-font-family: var(--input-font-family-inter);
+  --output-text-small-font-weight: var(--input-font-weight-medium);
+  --output-text-small-font-size: var(--input-number-12);
+  --output-text-small-line-height: var(--input-line-height-normal);
+  --output-text-small-letter-spacing: var(--input-number-0);
 }
