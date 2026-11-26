@@ -9,7 +9,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "color",
-        "$value": "{output.color.accent}"
+        "$value": "{output.color.def.accent}"
       },
       "bg-hover": {
         "$extensions": {
@@ -22,12 +22,12 @@
               "type": "mix",
               "value": "0.15",
               "space": "lch",
-              "color": "{output.color.bg}"
+              "color": "{output.color.def.bg}"
             }
           }
         },
         "$type": "color",
-        "$value": "{output.color.accent}"
+        "$value": "{output.color.def.accent}"
       },
       "fg": {
         "$extensions": {
@@ -38,7 +38,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "color",
-        "$value": "{output.color.on-accent}"
+        "$value": "{output.color.def.on-accent}"
       },
       "b-rad": {
         "$extensions": {

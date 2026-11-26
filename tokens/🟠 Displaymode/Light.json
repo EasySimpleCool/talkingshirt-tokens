@@ -21,6 +21,26 @@
           },
           "$type": "color",
           "$value": "{input.color.white}"
+        },
+        "success": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "color",
+          "$value": "{input.color.green}"
+        },
+        "error": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "color",
+          "$value": "{input.color.red}"
         }
       }
     }

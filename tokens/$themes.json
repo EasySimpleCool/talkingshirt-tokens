@@ -47,9 +47,9 @@
     "$figmaModeId": "443:1",
     "$figmaVariableReferences": {
       "modify.screen.number.common.main-body": "b227e016ef99d02073b0f2867f34e2a8b62a798c",
-      "modify.screen.number.number.sm": "51b1fdf752d60ce7bbc9dba64f1461e675fbf446",
-      "modify.screen.number.number.md": "58981585d6b3c79286e36b5e73627e3c30db4fa1",
-      "modify.screen.number.number.lg": "fbc3c3fe7c744f8e226f3c3286eca024a1aa7abf"
+      "modify.screen.number.number.16-24": "51b1fdf752d60ce7bbc9dba64f1461e675fbf446",
+      "modify.screen.number.number.24-40": "58981585d6b3c79286e36b5e73627e3c30db4fa1",
+      "modify.screen.number.number.40-80": "fbc3c3fe7c744f8e226f3c3286eca024a1aa7abf"
     },
     "$figmaStyleReferences": {},
     "group": "🟠 Screen"
@@ -65,9 +65,9 @@
     "$figmaModeId": "443:2",
     "$figmaVariableReferences": {
       "modify.screen.number.common.main-body": "b227e016ef99d02073b0f2867f34e2a8b62a798c",
-      "modify.screen.number.number.sm": "51b1fdf752d60ce7bbc9dba64f1461e675fbf446",
-      "modify.screen.number.number.md": "58981585d6b3c79286e36b5e73627e3c30db4fa1",
-      "modify.screen.number.number.lg": "fbc3c3fe7c744f8e226f3c3286eca024a1aa7abf"
+      "modify.screen.number.number.16-24": "51b1fdf752d60ce7bbc9dba64f1461e675fbf446",
+      "modify.screen.number.number.24-40": "58981585d6b3c79286e36b5e73627e3c30db4fa1",
+      "modify.screen.number.number.40-80": "fbc3c3fe7c744f8e226f3c3286eca024a1aa7abf"
     },
     "group": "🟠 Screen"
   },
@@ -77,7 +77,9 @@
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "modify.displaymode.color.fg": "2f2eaff9ea21613feb95314c746f59fbfda95170",
-      "modify.displaymode.color.bg": "27ea42eb74641123acf96f789cca2c5561635def"
+      "modify.displaymode.color.bg": "27ea42eb74641123acf96f789cca2c5561635def",
+      "modify.displaymode.color.success": "ed4d0637a2c1d1ed6ddb4f254f899333bb39b59d",
+      "modify.displaymode.color.error": "8af4e85ce5276b0660fe63a429f4d6122b24f408"
     },
     "$figmaCollectionId": "VariableCollectionId:1021:27",
     "$figmaModeId": "1037:0",
@@ -95,7 +97,9 @@
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "modify.displaymode.color.fg": "2f2eaff9ea21613feb95314c746f59fbfda95170",
-      "modify.displaymode.color.bg": "27ea42eb74641123acf96f789cca2c5561635def"
+      "modify.displaymode.color.bg": "27ea42eb74641123acf96f789cca2c5561635def",
+      "modify.displaymode.color.success": "ed4d0637a2c1d1ed6ddb4f254f899333bb39b59d",
+      "modify.displaymode.color.error": "8af4e85ce5276b0660fe63a429f4d6122b24f408"
     },
     "$figmaCollectionId": "VariableCollectionId:1021:27",
     "$figmaModeId": "1037:1",
@@ -121,13 +125,21 @@
     "$figmaCollectionId": "VariableCollectionId:443:4",
     "$figmaModeId": "443:3",
     "$figmaVariableReferences": {
-      "output.color.fg": "f4f349e9d51cd2e59e26b3c324bf712407d7c456",
-      "output.color.fg-alt": "4d11415c75ec3dcfaf6a68c7bccb45e6c090ba2d",
-      "output.color.bg": "58cf28f70d00e0140837fb6296c48299d4126d6a",
-      "output.color.bg-alt": "4548a9fec1399f3f377967ae841c7aaa6526667c",
-      "output.color.faint": "4e6047d8c11ef29cc6019d8e9a0dfe69bc460076",
-      "output.color.accent": "f64cdd0c1923b2c9d7316e23663a6cc1629c848c",
-      "output.color.on-accent": "89b2f36cbaa907a1e19ccc120a226097e2510eda"
+      "output.color.def.fg": "f4f349e9d51cd2e59e26b3c324bf712407d7c456",
+      "output.color.def.fg-alt": "4d11415c75ec3dcfaf6a68c7bccb45e6c090ba2d",
+      "output.color.def.bg": "58cf28f70d00e0140837fb6296c48299d4126d6a",
+      "output.color.def.bg-alt": "4548a9fec1399f3f377967ae841c7aaa6526667c",
+      "output.color.def.faint": "4e6047d8c11ef29cc6019d8e9a0dfe69bc460076",
+      "output.color.def.accent": "f64cdd0c1923b2c9d7316e23663a6cc1629c848c",
+      "output.color.def.on-accent": "89b2f36cbaa907a1e19ccc120a226097e2510eda",
+      "output.color.sys.success-accent": "388e49f2b842e5d4066e56d14ff3d993df420313",
+      "output.color.sys.error-accent": "c96295b8d5beda49537ca7b13c2103d906d32de2",
+      "output.number.fluid.sm": "dcedfd035c039d3474711c79e573788398088f5d",
+      "output.number.fluid.md": "522464d1ec076c217b47d97318bc29d401be3474",
+      "output.number.fluid.lg": "79ed431ece6db601a5637c456803c895a9ae905c",
+      "output.number.static.24": "f5a788a5b0a55e9bf538ab77a16b876378f0d95f",
+      "output.number.static.40": "bfaeb675887e00dff74f72811dc41cf01d14e24f",
+      "output.number.static.80": "d0a42a1036ee10dc6eb4cd470428c25b250442ea"
     },
     "$figmaStyleReferences": {
       "text.medium": "S:08afe6f27d01352a3d1ff8040072c0c56bb85182,",

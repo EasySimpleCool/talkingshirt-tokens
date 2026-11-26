@@ -1,88 +1,114 @@
 {
   "output": {
     "color": {
-      "fg": {
-        "$extensions": {
-          "com.figma.scopes": [
-            "SHAPE_FILL",
-            "TEXT_FILL"
-          ],
-          "com.figma.hiddenFromPublishing": false
+      "def": {
+        "fg": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "color",
+          "$value": "{modify.displaymode.color.fg}"
         },
-        "$type": "color",
-        "$value": "{modify.displaymode.color.fg}"
-      },
-      "fg-alt": {
-        "$extensions": {
-          "com.figma.scopes": [
-            "SHAPE_FILL",
-            "TEXT_FILL"
-          ],
-          "com.figma.hiddenFromPublishing": false,
-          "studio.tokens": {
-            "modify": {
-              "type": "alpha",
-              "value": ".5",
-              "space": "lch"
+        "fg-alt": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false,
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": ".5",
+                "space": "lch"
+              }
             }
-          }
+          },
+          "$type": "color",
+          "$value": "{modify.displaymode.color.fg}"
         },
-        "$type": "color",
-        "$value": "{modify.displaymode.color.fg}"
-      },
-      "bg": {
-        "$extensions": {
-          "com.figma.scopes": [
-            "ALL_FILLS"
-          ],
-          "com.figma.hiddenFromPublishing": false
+        "bg": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_FILLS"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "color",
+          "$value": "{modify.displaymode.color.bg}"
         },
-        "$type": "color",
-        "$value": "{modify.displaymode.color.bg}"
-      },
-      "bg-alt": {
-        "$extensions": {
-          "com.figma.scopes": [
-            "ALL_FILLS"
-          ],
-          "com.figma.hiddenFromPublishing": false,
-          "studio.tokens": {
-            "modify": {
-              "type": "alpha",
-              "value": "0.5",
-              "space": "lch"
+        "bg-alt": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_FILLS"
+            ],
+            "com.figma.hiddenFromPublishing": false,
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.5",
+                "space": "lch"
+              }
             }
-          }
+          },
+          "$type": "color",
+          "$value": "{modify.displaymode.color.bg}"
         },
-        "$type": "color",
-        "$value": "{modify.displaymode.color.bg}"
-      },
-      "faint": {
-        "$extensions": {
-          "com.figma.scopes": [
-            "SHAPE_FILL",
-            "TEXT_FILL",
-            "STROKE_COLOR"
-          ],
-          "com.figma.hiddenFromPublishing": false,
-          "studio.tokens": {
-            "modify": {
-              "type": "alpha",
-              "value": "0.1",
-              "space": "lch"
+        "faint": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "SHAPE_FILL",
+              "TEXT_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false,
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.1",
+                "space": "lch"
+              }
             }
-          }
+          },
+          "$type": "color",
+          "$value": "{modify.displaymode.color.fg}"
         },
-        "$type": "color",
-        "$value": "{modify.displaymode.color.fg}"
+        "accent": {
+          "$type": "color",
+          "$value": "{modify.displaymode.color.fg}"
+        },
+        "on-accent": {
+          "$type": "color",
+          "$value": "{modify.displaymode.color.bg}"
+        }
       },
-      "accent": {
-        "$type": "color",
-        "$value": "{modify.displaymode.color.fg}"
-      },
-      "on-accent": {
-        "$type": "color",
-        "$value": "{modify.displaymode.color.bg}"
+      "sys": {
+        "success-accent": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "color",
+          "$value": "{modify.displaymode.color.success}"
+        },
+        "error-accent": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "color",
+          "$value": "{modify.displaymode.color.error}"
+        }
       }
     },
     "text": {
