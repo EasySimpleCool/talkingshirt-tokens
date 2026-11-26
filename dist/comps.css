@@ -1,9 +1,9 @@
 /* Generated — do not edit. Built from Token Studio sources. */
 
 :root {
-  --comp-button-bg-default: var(--output-color-accent);
-  --comp-button-bg-hover: color-mix(in oklch, var(--output-color-accent) 85%, var(--output-color-bg));
-  --comp-button-fg: var(--output-color-on-accent);
+  --comp-button-bg-default: var(--output-color-def-accent);
+  --comp-button-bg-hover: color-mix(in oklch, var(--output-color-def-accent) 85%, var(--output-color-def-bg));
+  --comp-button-fg: var(--output-color-def-on-accent);
   --comp-button-b-rad: var(--input-number-8);
   --comp-button-v-pad: var(--input-number-8);
   --comp-button-h-pad: var(--input-number-16);

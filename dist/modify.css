@@ -37,11 +37,15 @@
   :root {
     --modify-displaymode-color-fg: var(--input-color-black);
     --modify-displaymode-color-bg: var(--input-color-white);
+    --modify-displaymode-color-success: var(--input-color-green);
+    --modify-displaymode-color-error: var(--input-color-red);
   }
 }
 :root[data-displaymode="light"] {
   --modify-displaymode-color-fg: var(--input-color-black);
   --modify-displaymode-color-bg: var(--input-color-white);
+  --modify-displaymode-color-success: var(--input-color-green);
+  --modify-displaymode-color-error: var(--input-color-red);
 }
 
 /* Displaymode → Dark */
@@ -49,9 +53,13 @@
   :root {
     --modify-displaymode-color-fg: var(--input-color-white);
     --modify-displaymode-color-bg: var(--input-color-black);
+    --modify-displaymode-color-success: var(--input-color-green);
+    --modify-displaymode-color-error: var(--input-color-red);
   }
 }
 :root[data-displaymode="dark"] {
   --modify-displaymode-color-fg: var(--input-color-white);
   --modify-displaymode-color-bg: var(--input-color-black);
+  --modify-displaymode-color-success: var(--input-color-green);
+  --modify-displaymode-color-error: var(--input-color-red);
 }

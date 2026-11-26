@@ -1,13 +1,15 @@
 /* Generated — do not edit. Built from Token Studio sources. */
 
 :root {
-  --output-color-fg: var(--modify-displaymode-color-fg);
-  --output-color-fg-alt: rgb(from var(--modify-displaymode-color-fg) r g b / 0.5);
-  --output-color-bg: var(--modify-displaymode-color-bg);
-  --output-color-bg-alt: rgb(from var(--modify-displaymode-color-bg) r g b / 0.5);
-  --output-color-faint: rgb(from var(--modify-displaymode-color-fg) r g b / 0.1);
-  --output-color-accent: var(--modify-displaymode-color-fg);
-  --output-color-on-accent: var(--modify-displaymode-color-bg);
+  --output-color-def-fg: var(--modify-displaymode-color-fg);
+  --output-color-def-fg-alt: rgb(from var(--modify-displaymode-color-fg) r g b / 0.5);
+  --output-color-def-bg: var(--modify-displaymode-color-bg);
+  --output-color-def-bg-alt: rgb(from var(--modify-displaymode-color-bg) r g b / 0.5);
+  --output-color-def-faint: rgb(from var(--modify-displaymode-color-fg) r g b / 0.1);
+  --output-color-def-accent: var(--modify-displaymode-color-fg);
+  --output-color-def-on-accent: var(--modify-displaymode-color-bg);
+  --output-color-sys-success-accent: var(--modify-displaymode-color-success);
+  --output-color-sys-error-accent: var(--modify-displaymode-color-error);
   --output-text-medium-font-family: var(--input-font-family-inter);
   --output-text-medium-font-weight: var(--input-font-weight-bold);
   --output-text-medium-font-size: var(--input-number-24);
